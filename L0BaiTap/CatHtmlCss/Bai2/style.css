@@ -1,0 +1,40 @@
+body,html{
+    height: 100%;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.tong{
+   width: 700px;
+   background-image: url(Image/Untitled.jpg);
+  height: 170px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+#textBig{
+    top: 50px;
+    font-size: 20px;
+}
+
+#textSmall{
+    font-size: 10px;
+}
+
+#btn{
+    height: 30px;
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    border-radius: 3px;
+}
+
+#btn:hover{
+    cursor: pointer;
+    color:#FFB0B8;
+    background-color: #C72838;
+    border: 1px solid #C72838;
+}

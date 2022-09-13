@@ -1,0 +1,128 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+#A1{
+	width: 1000px;
+	height: 1000px;
+	border: 10px solid red;
+	box-sizing: border-box;
+	
+}
+
+#A2{
+	width: 500px;
+	height: 125px;
+	border: 10px solid rosybrown;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#A4{
+	width: 900px;
+	height: 685px;
+	border: 10px solid blue;
+	box-sizing: border-box;
+	margin-top: 115px;
+}
+
+
+#A3{
+	width: 500px;
+	height: 145px;
+	border: 10px solid orange;
+	box-sizing: border-box;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+#A5{
+	width: 560px;
+	height: 250px;
+	border: 10px solid purple;
+	box-sizing: border-box;
+	margin-left: 200px;
+	top: 50%;
+	position: sticky;
+	z-index: 0;
+	
+}
+
+#A4 > #A6{
+	width: 220px;
+	height: 90px;
+	border: 10px solid yellow;
+	box-sizing: border-box;
+	z-index: 1;
+	position: absolute;
+	margin: 292px 0 0 335px;
+}
+
+@media only screen and (max-width:  780px){
+	*{
+	padding: 0;
+	margin: 0;
+}
+#A1{
+	width: 500px;
+	height: 1000px;
+	border: 10px solid red;
+	box-sizing: border-box;
+	background: yellow;
+}
+
+#A2{
+	width: 250px;
+	height: 125px;
+	border: 10px solid rosybrown;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#A4{
+	width: 450px;
+	height: 685px;
+	border: 10px solid blue;
+	box-sizing: border-box;
+	margin-top: 115px;
+}
+
+
+#A3{
+	width: 250px;
+	height: 145px;
+	border: 10px solid orange;
+	box-sizing: border-box;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+#A5{
+	width: 280px;
+	height: 250px;
+	border: 10px solid purple;
+	box-sizing: border-box;
+	margin-left: 200px;
+	top: 50%;
+	position: sticky;
+	z-index: 0;
+}
+
+#A4 > #A6{
+	width: 220px;
+	height: 90px;
+	border: 10px solid yellow;
+	box-sizing: border-box;
+	z-index: 1;
+	position: absolute;
+	margin: 50% 0 0 50%;
+}
+
+}
+

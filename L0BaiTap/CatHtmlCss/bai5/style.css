@@ -1,0 +1,19 @@
+#divTong{
+   width: 650px;
+   height: 300px;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.danhSach{
+   float: left;
+   color: gray;
+   font-size: 13px;
+}
+
+ul{
+   list-style-image: url(Image/tichXanh1.png);
+}
+li{
+   padding-bottom: 10px;
+   padding-right: 40px;
+}

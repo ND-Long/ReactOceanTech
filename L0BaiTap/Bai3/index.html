@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bai3DangNhap</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+		<h1 id="heading">Login form</h1>
+		<button type="submit" id="btnNgoai" onclick="document.getElementById('formDN').style.display = 'block'">Đăng nhập <br> hệ thống</button>
+	<div id="formDN" class="modal">
+		<button id="btnCancel" onclick="document.getElementById('formDN').style.display = 'none'">×</button>
+		<form action="" >
+			<span style="font-size: 23px;margin-top: -50px;">Member Login</span>
+			<br>
+			<br>
+			<input class="sizeLogin" type="text" id="inputName" placeholder="Username">
+			<br>
+			<br>
+			<input class="sizeLogin" type="text" id="inputPass" placeholder="Password">
+			<br>
+			<br>
+			<button id="login" class="sizeLogin">Login</button>
+			<br>
+			<br>
+			<div id="forgotPass">
+				<button id="forgot">Forgot Password?</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

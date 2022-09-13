@@ -1,0 +1,75 @@
+.le{
+	background: red;
+}
+
+.chan{
+	background: green;
+}
+
+
+@media only screen and (max-width: 1200px){
+	.le{
+	background: purple;
+	width:  40px;
+	}
+
+	.chan{
+		background: pink;
+		width: 100px;
+	}
+
+}
+
+@media only screen and (max-width: 992px){
+	.le{
+	 	background: yellow;
+	 	width: 30px;
+	}
+
+	.chan{
+		background: purple;
+		width: 40px
+
+	}
+
+}
+
+@media only screen and (max-width: 768px){
+	.le{
+		background: brown;
+		width: 30px;
+	}
+
+	.chan{
+		background: yellow;
+		width: 40px;
+	}
+
+}
+
+@media only screen and (max-width:  780px){
+	.le{
+		background: yellow;
+		width: 20px;
+	}
+
+	.chan{
+		background: red;
+		width: 50px;
+	}
+
+}
+
+@media only screen and (max-width: 320px){
+	.le{
+		background: red;
+		width: 20px;
+	}
+
+	.chan{
+		background: green;
+		width: 30px;
+	}
+
+}
+
