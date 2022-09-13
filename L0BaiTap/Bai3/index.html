@@ -11,8 +11,9 @@
 <body>
 		<h1 id="heading">Login form</h1>
 		<button type="submit" id="btnNgoai" onclick="document.getElementById('formDN').style.display = 'block'">Đăng nhập <br> hệ thống</button>
-	<div id="formDN" class="modal">
-		<button id="btnCancel" onclick="document.getElementById('formDN').style.display = 'none'">×</button>
+		<br>
+		<div id="formDN" class="modal">
+		<span id="btnCancel" onclick="document.getElementById('formDN').style.display = 'none'">×</span>
 		<form action="" >
 			<span style="font-size: 23px;margin-top: -50px;">Member Login</span>
 			<br>
@@ -27,7 +28,7 @@
 			<br>
 			<br>
 			<div id="forgotPass">
-				<button id="forgot">Forgot Password?</button>
+				<span id="forgot">Forgot Password?</span>
 			</div>
 		</form>
 	</div>
