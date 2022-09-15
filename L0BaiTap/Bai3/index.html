@@ -6,28 +6,56 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bai3DangNhap</title>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
 	<script src="script.js"></script>
 </head>
 <body>
 		<h1 id="heading">Login form</h1>
-		<button type="submit" id="btnNgoai" onclick="document.getElementById('formDN').style.display = 'block'">Đăng nhập <br> hệ thống</button>
+
+		<!-- //nút ấn hiện Form login -->
+		<button type="submit" id="btnNgoai" onclick="hienForm()">Đăng nhập <br> hệ thống</button>
+		<button type="text" id="thanhCong" >Đăng nhập <br> thành công</button>
 		<div id="formDN" class="modal">
+
+		<!-- //nút ấn để ẩn form -->
 		<span id="btnCancel" onclick="document.getElementById('formDN').style.display = 'none'">×</span>
 		<form action="" >
 			<span style="font-size: 23px;margin-top: -50px;">Member Login</span>
 			<br>
 			<br>
-			<input class="sizeLogin" type="text" id="inputName" placeholder="Username">
+
+			<!-- nhập tài khoản -->
+			<div class="divInput">
+				<div class="icon">
+					<i class="fas fa-user" ></i>
+				</div>
+				<input class="sizeLogin" type="text" id="inputName" placeholder="Username" >
+				<div class="loi" id="loiUser">
+					<span></span>
+				</div>
+			</div>
+			<br>
+			<!-- nhập mật khẩu -->
+			<div class="divInput">
+				<input class="sizeLogin" type="password" id="inputPass" placeholder="Password" >
+				<div class="icon">
+					<i class="fa fa-key icon"></i>
+				</div>
+				<div class="loi" id="loiPass">
+					<span></span>
+				</div>
+			</div>
+			<br>
+
+		<!-- //nút ấn để login -->
+			<button type="submit" id="login" class="sizeLogin" onclick="return dangNhap()">Login</button>
 			<br>
 			<br>
-			<input class="sizeLogin" type="text" id="inputPass" placeholder="Password">
-			<br>
-			<br>
-			<button id="login" class="sizeLogin">Login</button>
-			<br>
-			<br>
+
+
+		<!-- chỗ ấn quên mật khẩu -->
 			<div id="forgotPass">
-				<span id="forgot">Forgot Password?</span>
+				<span id="forgot" onclick="">Forgot Password?</span>
 			</div>
 		</form>
 	</div>
