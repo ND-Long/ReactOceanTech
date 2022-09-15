@@ -36,7 +36,7 @@ function dangNhap(){
         document.getElementById("loiUser").innerHTML = '';
         document.getElementById("loiPass").innerHTML = '';
         document.getElementById("thanhCong").style.display = 'block';
-        document.getElementById("btnNgoai").style.display = 'none';
+        // document.getElementById("btnNgoai").style.display = 'none';
     }
     return check;
 }
