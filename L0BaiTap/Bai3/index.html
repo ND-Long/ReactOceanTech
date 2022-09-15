@@ -10,52 +10,112 @@
 	<script src="script.js"></script>
 </head>
 <body>
-		<h1 id="heading">Login form</h1>
-
-		<!-- //nút ấn hiện Form login -->
+	<div id="btnHeThong">
 		<button type="submit" id="btnNgoai" onclick="hienForm()">Đăng nhập <br> hệ thống</button>
 		<button type="text" id="thanhCong" >Đăng nhập <br> thành công</button>
+	</div>
+		<!-- //nút ấn hiện Form login -->
+		
 		<div id="formDN" class="modal">
 
 		<!-- //nút ấn để ẩn form -->
-		<span id="btnCancel" onclick="document.getElementById('formDN').style.display = 'none'">×</span>
+		<span id="btnCancel" onclick="anForm()">×</span>
 		<form action="" >
 			<span style="font-size: 23px;margin-top: -50px;">Member Login</span>
 			<br>
 			<br>
 
 			<!-- nhập tài khoản -->
-			<div class="divInput">
-				<div class="icon">
-					<i class="fas fa-user" ></i>
+			<div id="divInput">
+				<div  class="divInput">
+					<div id="iconUser" class="icon" >
+						<i class="fas fa-user" ></i>
+					</div>
+					<div>
+						
+					</div>
+					<input class="sizeLogin" type="text" id="inputName" placeholder="Username" >
+					<div class="loi" id="loiUser">
+						<span></span>
+					</div>
 				</div>
-				<input class="sizeLogin" type="text" id="inputName" placeholder="Username" >
-				<div class="loi" id="loiUser">
-					<span></span>
-				</div>
-			</div>
-			<br>
-			<!-- nhập mật khẩu -->
-			<div class="divInput">
-				<input class="sizeLogin" type="password" id="inputPass" placeholder="Password" >
-				<div class="icon">
-					<i class="fa fa-key icon"></i>
-				</div>
-				<div class="loi" id="loiPass">
-					<span></span>
+				<br>
+				<!-- nhập mật khẩu -->
+				<div class="divInput">
+					<input class="sizeLogin" type="password" id="inputPass" placeholder="Password" >
+					<div class="icon">
+						<i class="fa fa-lock icon"></i>
+					</div>
+					<div class="loi" id="loiPass">
+						<span></span>
+					</div>
 				</div>
 			</div>
 			<br>
 
 		<!-- //nút ấn để login -->
-			<button type="submit" id="login" class="sizeLogin" onclick="return dangNhap()">Login</button>
+			<div id="btnLoginSave">
+			<button type="button" id="login" class="sizeLogin" onclick="loading()">Login</button>
+		<!-- nút ấn để lưu mật khẩu -->
+			</div>
+			<span id="passThanhCong" ></span>
 			<br>
 			<br>
 
 
 		<!-- chỗ ấn quên mật khẩu -->
 			<div id="forgotPass">
-				<span id="forgot" onclick="">Forgot Password?</span>
+				<span id="forgot" onclick="forgotPass()">Forgot Password?</span>
+			</div>
+		</form>
+	</div>
+
+	<div id="formForgot" class="modal">
+
+		<!-- //nút ấn để ẩn form -->
+		<span id="btnCancel" onclick="anForm()">×</span>
+		<form action="" >
+			<span style="font-size: 23px;margin-top: -50px;">Member Login</span>
+			<br>
+			<br>
+
+			<!-- nhập tài khoản -->
+			<div id="divInput">
+				<div  class="divInput">
+					<div id="iconOldPass" class="icon">
+						<i class="fa fa-lock icon"></i>
+					</div>
+					<input class="sizeLogin" type="password" id="inputPassOld" placeholder="OldPassWord" >
+					<div class="loi" id="loiPassOld">
+						<span></span>
+					</div>
+				</div>
+				<br>
+				<!-- nhập mật khẩu -->
+				<div class="divInput">
+					<input class="sizeLogin" type="password" id="inputPassNew" placeholder="NewPassWord" >
+					<div class="icon">
+						<i class="fa fa-lock icon"></i>
+					</div>
+					<div class="loi" id="loiPassNew">
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<br>
+
+		<!-- nút ấn để lưu mật khẩu -->
+			<div id="btnLoginSave">
+			<button type="button" id="save" class="sizeLogin" onclick="loading2()">Save</button>
+		
+			</div>
+			<br>
+			<br>
+
+
+		<!-- chỗ ấn quên mật khẩu -->
+			<div id="forgotPass">
+				<span id="forgot" onclick="forgotPass()">Forgot Password?</span>
 			</div>
 		</form>
 	</div>
