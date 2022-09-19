@@ -1,0 +1,80 @@
+#divTong{
+    width: 1000px;
+    height: 100%;
+    /* background-color: pink; */
+    position: relative;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.trai{
+    width: 30%;
+    height: 100%;
+    /* background-color: brown; */
+    float: left;
+}
+
+.phai{
+    width: 70%;
+    height: 100%;
+    /* background-color: pink; */
+    float: left;
+}
+
+#iconLocation,#iconEmail,#iconPhone{
+    color: gray;
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+}
+
+span{
+    margin-left: 20px;
+    color: gray;
+}
+
+.ipt{
+    height: 25px;
+    width: 99%;
+    border: 1px solid rgb(215, 215, 215);
+}
+
+#message{
+    height: 100px;
+}
+
+#btn{
+    width: 120px;
+    height: 40px;
+    color: white;
+    border: 0;
+    background-color: rgb(40, 171, 171);
+}
+
+#btn:hover{
+    background-color: rgb(60, 214, 214);
+ 
+}
+
+#dongKe{
+    position: absolute;
+    size: 10px;
+    background-color: orange;
+    height: 0px;
+    width: 70px;
+    border: 2px solid orange;
+    box-sizing: border-box;
+}
+
+#message{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#iconLocation{
+    font-size: 30px;
+    transform: translate(5px,10px);
+}
+
+#iconPhone{
+    transform:translateX(4px) ;
+}

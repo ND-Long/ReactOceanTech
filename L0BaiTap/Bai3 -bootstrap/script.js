@@ -8,7 +8,7 @@ function anForm(){
 
 function hienForm(){
     document.getElementById("btnNgoai").style.display = 'none';
-      document.getElementById('formDN').style.display = 'block';
+    document.getElementById('formDN').style.display = 'block';
     document.getElementById("inputName").value = '';
     document.getElementById("inputPass").value = '';
     document.getElementById("loiUser").innerHTML = '';
@@ -75,6 +75,8 @@ function forgotPass(){
     document.getElementById("save").style.display = 'block';
     document.getElementById("inputPassOld").value = '';
     document.getElementById("inputPassNew").value = '';
+    document.getElementById("loiPassOld").innerHTML = '';
+    document.getElementById("loiPassNew").innerHTML = '';
 
 }
 
