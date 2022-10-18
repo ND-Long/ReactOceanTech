@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bai3DangNhap</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<div id="btnSystem">
+		<button type="submit" id="btnHome" onclick="showForm()">Đăng nhập <br> hệ thống</button>
+		<button type="text" id="notificationSuccess">Đăng nhập <br> thành công</button>
+	</div>
+	<!-- //nút ấn hiện Form login -->
+
+	<div id="formLogin" class="modal">
+
+		<!-- //nút ấn để ẩn form -->
+		<span id="btnCancel" onclick="hideForm()">×</span>
+		<form action="">
+			<span style="font-size: 23px;margin-top: -50px;">Member Login</span>
+			<br>
+			<br>
+
+			<!-- nhập tài khoản -->
+			<div id="divInput">
+				<div class="divInput">
+					<div id="iconUser" class="icon">
+						<i class="fas fa-user"></i>
+					</div>
+					<div>
+
+					</div>
+					<input class="sizeLogin" type="text" id="inputName" placeholder="Username">
+					<div class="error" id="errorUser">
+						<span></span>
+					</div>
+				</div>
+				<br>
+				<!-- nhập mật khẩu -->
+				<div class="divInput">
+					<input class="sizeLogin" type="password" id="inputPass" placeholder="Password">
+					<div class="icon">
+						<i class="fa fa-lock icon"></i>
+					</div>
+					<div class="error" id="errorPass">
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<br>
+
+
+			<!-- //nút ấn để login -->
+			<div id="btnLoginSave">
+				<button type="button" id="login" class="sizeLogin" onclick="loading()">Login</button>
+				<!-- nút ấn để lưu mật khẩu -->
+			</div>
+			<span id="passnotificationSuccess"></span>
+			<br>
+			<br>
+
+
+			<!-- chỗ ấn quên mật khẩu -->
+			<div id="forgotPass">
+				<span id="forgot" onclick="forgotPass()">Forgot Password?</span>
+			</div>
+		</form>
+	</div>
+
+	<div id="formForgot" class="modal">
+
+		<!-- //nút ấn để ẩn form -->
+		<span id="btnCancel" onclick="hideForm()">×</span>
+		<form action="">
+			<span style="font-size: 23px;margin-top: -50px;">Member Login</span>
+			<br>
+			<br>
+
+			<!-- nhập tài khoản -->
+			<div id="divInput">
+				<div class="divInput">
+					<div id="iconOldPass" class="icon">
+						<i class="fa fa-lock icon"></i>
+					</div>
+					<input class="sizeLogin" type="password" id="inputPassOld" placeholder="OldPassWord">
+					<div class="error" id="errorPassOld">
+						<span></span>
+					</div>
+				</div>
+				<br>
+				<!-- nhập mật khẩu -->
+				<div class="divInput">
+					<input class="sizeLogin" type="password" id="inputPassNew" placeholder="NewPassWord">
+					<div class="icon">
+						<i class="fa fa-lock icon"></i>
+					</div>
+					<div class="error" id="errorPassNew">
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<br>
+
+			<!-- nút ấn để lưu mật khẩu -->
+			<div id="btnLoginSave">
+				<button type="button" id="save" class="sizeLogin" onclick="loading2()">Save</button>
+
+			</div>
+			<br>
+			<br>
+
+
+			<!-- chỗ ấn quên mật khẩu -->
+			<div id="forgotPass">
+				<span id="forgot" onclick="forgotPass()">Forgot Password?</span>
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>

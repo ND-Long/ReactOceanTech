@@ -1,0 +1,131 @@
+#container {
+    padding: 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 0 100px 0 100px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#heading {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.item {
+    padding-bottom: 20px;
+    color: rgb(146, 146, 146);
+    /* width: 100%; */
+    position: relative;
+}
+
+.itemInfo {
+    padding-bottom: 20px;
+    color: rgb(146, 146, 146);
+    display: grid;
+    grid-template-columns: 49% 2% 49%;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.itemButton {
+    display: grid;
+    grid-template-columns: auto auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.input_content {
+    width: 100%;
+    height: 30px;
+    border-radius: 2px;
+    border: 1px solid rgb(182, 182, 182);
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 150px;
+    border: 1px solid rgb(182, 182, 182);
+    box-sizing: border-box;
+}
+
+button {
+    border-radius: 5px;
+    background-color: rgb(32, 188, 255);
+    border: 2px solid rgb(9, 130, 196);
+    color: white;
+    margin-top: -10px;
+    padding: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(75, 75, 255);
+}
+
+#fillForm {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: rgb(142, 142, 142);
+    margin-top: -20px;
+    background-color: pink;
+    width: 60%;
+}
+
+span {
+    position: absolute;
+    right: 0;
+}
+
+.button {
+    position: relative;
+}
+
+::placeholder {
+    color: rgb(182, 182, 182);
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 720px) {
+    .itemInfo {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    #container {
+        padding: 20px;
+    }
+
+    #address {
+        margin-top: 20px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+
+}
+
+@media only screen and (max-width: 530px) {
+    #fillForm {
+        width: 100%;
+        top: 0;
+    }
+
+    .button {
+        position: absolute;
+        right: 0;
+        margin-top: 20px;
+    }
+
+    .itemButton {
+        grid-template-columns: auto;
+    }
+}
